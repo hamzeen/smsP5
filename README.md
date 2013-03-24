@@ -2,10 +2,10 @@
 A processing library to send and recieve short messages (SMS).
 
 This library wraps around SMSLib to provide a simple API for Processing users to send and receive 
-short messages from Processing. Below is a screen from on of the examples which comes 
+short messages from Processing. Below is a screen from one of the examples which comes 
 as part of the library.
 
-![https://github.com/hamzeen/smsP5/raw/master/receive_screen.jpg](https://github.com/hamzeen/smsP5/raw/master/receive_screen.jpg)
+![alt text](https://github.com/hamzeen/smsP5/raw/master/receive_screen.jpg "A screen from an example")
 
 ## Installation ##
 The instalaltion of this library follows the same process of extracting the archive you obtain here to your 
@@ -13,7 +13,7 @@ libraries folder, found inside your sketchbook folder/directory. It should be si
 any other P5 library. Since, these are essentially wrapper classes around SMSLib, you need to install JavaCOMM 
 unless, it is already installed.
 
-### Java COMM [files inside [*extras*]]
+### Java COMM [files inside *extras*]
 *   File comm.jar should be copied to JDK_DIR/jre/lib/ext/ (typically, JDK_DIR=C:\Program Files\Java)
 *   File javax.comm.properties should be copied to JDKDIR/jre/lib/
 *   Library files (i.e. win32com.dll for Win32 or the .so Linux library files) should be copied to JDKDIR/jre/bin/
