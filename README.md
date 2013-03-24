@@ -1,7 +1,7 @@
 ## smsP5 ##
-A processing library to send and recieve short messages (SMS). This library wraps around SMSLib to 
-provide a simple API for Processing users to send and receive short messages from Processing. 
-Below is a screen from one of the examples which comes as part of the library.
+A processing library to send/recieve short messages (SMS). This library wraps around SMSLib to 
+provide a simple API for Processing users. Below is a screen from one of the examples 
+which comes as part of the library.
 
 ![alt text](https://github.com/hamzeen/smsP5/raw/master/receive_screen.jpg "A screen from an example")
 
