@@ -13,7 +13,7 @@ libraries folder, found inside your sketchbook folder/directory. It should be si
 any other P5 library. Since, these are essentially wrapper classes around SMSLib, you need to install JavaCOMM 
 unless, it is already installed.
 
-### Java COMM [files inside *extras*]
+### Java COMM Installation ( files inside *extras* )
 *   File comm.jar should be copied to JDK_DIR/jre/lib/ext/ (typically, JDK_DIR=C:\Program Files\Java)
 *   File javax.comm.properties should be copied to JDKDIR/jre/lib/
 *   Library files (i.e. win32com.dll for Win32 or the .so Linux library files) should be copied to JDKDIR/jre/bin/
@@ -21,7 +21,7 @@ unless, it is already installed.
 *   The extras folder here, only contains files required for installation on Windows boxes running on 32-bit (i586) Java.
 *   However, this library should work on all platforms. Hence if you are not on a Windows box, 
 please follow installation instructions tailored for your OS/distribution at, [SMSLib Installation] (http://smslib.org/doc/installation/).
-*   Known Issue: This might not work with 64-bit Java installations and it's a known issue with SMSLib as well. 
+*   **Known Issue**: This might not work with 64-bit Java installations and it's a known issue with SMSLib as well. 
 Hence in this case, I reccoment you to install 32-bit Java.
 
 ## Examples & Usage ##
