@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Smsp5 by hamzeen</title>
+    <title>smsP5 - A processing library</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -31,44 +31,74 @@
 
       <section>
         <div id="title">
-          <h1>Smsp5</h1>
-          <p>A processing library to send and recieve short messages (SMS).</p>
+          <h1>smsP5</h1>
+          <p>A processing library to send/recieve short messages (SMS).</p>
           <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/hamzeen">hamzeen</a></span>
+          <span class="credits left">Maintained by <a href="https://github.com/hamzeen">hamzeen</a></span>
           <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
         </div>
 
         <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>1. ABOUT</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p align="justify">This library wraps around SMSLib to provide a simple API for Processing users. 
+It was tested on both 1.5.1 as well as the latest 2.0 versions of Processing Development Environment (PDE).
+<br/><br/></p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
+
+<h3><a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>2. INSTALLATION</h3>
+
+<h4>2.1. For Processing 2.0</h4>
+<pre><code>You can navigate to Tools -> Add Tool... and select smsP5.
 </code></pre>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<h4>2.2. For previous versions of Processing (i.e before 2.0)</h4>
+<p align="justify">The instalaltion of this library follows the same process of 
+extracting the archive you obtain here to your libraries folder, 
+found inside the sketchbook folder.</p>
+
+<h4>2.3. Java COMM Installation</h4>
+
+<p align="justify">After the instalaltion of the library you also need to install JavaCOMM as this library is 
+essentially a set of wrappers around SMSLib. Installation instructions for it can be found below, all the required files for it can be found inside *extras* folder of the library.</p>
+
+<ul>
+	<li>File comm.jar should be copied to JDK_DIR/jre/lib/ext/ (typically, JDK_DIR=C:\Program Files\Java)</li>
+	<li>File javax.comm.properties should be copied to JDKDIR/jre/lib/</li>
+	<li>Library files (i.e. win32com.dll for Win32 or the .so Linux library files) should be copied to JDKDIR/jre/bin</li>
+</ul>
+<p align="justify">If you have more JRE installations, please follow the same with each installation. This is important!. The extras folder here, only contains files required for installation on Windows boxes running on 32-bit (i586) Java.</p>
+
+<ul>
+	<li>However, this library should work on all platforms. Hence if you are not on a Windows box, 
+	please follow installation instructions tailored for your OS/distribution at, <a target="_blank" href="http://smslib.org/doc/installation/">SMSLib Installation</a></li>
+
+	<li>For PROCESSING 2.0: The file, javax.comm.properties also needs to be copied to /processing-2.0/java/lib/ it's an additioanl step for you</li>
+</ul>
+
+<p align="justify">Note: This might not work with 64-bit Java installations and it's a known issue with SMSLib as well. Hence in this case, I reccomend you to install 32-bit Java.<br/><br/></p>
 
 <h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>3. Examples & Usage</h3>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<p align="justify">The libray contains two seperate examples on sending/receiving short messages (SMS) with the library. When you run these examples for the first time, it might be little slow. So please be patient untill it gets underway. Once you export an application which uses this library, it will take care of everything it requires to make sure that is works on any machine without requiring the JavaCOMM installation as above. Enjoy!<br/><br/></p>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
 <h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+4. Credit</h3>
+	<ul>
+		<li><a target="_blank" href="http://smslib.org/">SMSLib</a>, for making this library possible.</li>
+	</ul>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
 
 <h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>5. LICENSE</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<p align="justify">Copyright © 2013 Hamzeen. H. Licensed under the Apache License, Version 2.0: <a target="_blank" href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a><br/>
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this project. It includes the rights to use, fork, modify, merge, publish and distribute.<br/><br/>
+
+THE SOURCE OF THIS PROJECT IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.</p>
       </section>
 
     </div>
