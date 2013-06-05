@@ -16,6 +16,7 @@ PFont font;
 
 void setup(){
   size(400,400);
+  org.apache.log4j.BasicConfigurator.configure();
   receiver = new ReceiveSms("modem.com1", "COM3", 19200,"Huawei", "E220",3);
 
   font = createFont( "Arial", 16 );

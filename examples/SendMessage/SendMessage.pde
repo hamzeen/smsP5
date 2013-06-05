@@ -12,6 +12,7 @@ boolean messageSent;
 
 void setup() {
   size(400,300);
+  org.apache.log4j.BasicConfigurator.configure();
   sender = new SendSms("modem.com1", "COM3", 19200, "Huawei", "E220");
 }
 

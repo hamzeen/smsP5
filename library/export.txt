@@ -1,0 +1,5 @@
+# only export the following jar for applets..
+# everything else is installed as a separate browser plugin
+applet=SmsP5.jar
+# application needs the following
+application=SmsP5.jar,win32com.dll,commons-net-3.0.1.jar,jsmpp-2.1.0.jar,log4j-1.2.16.jar,pduutils.jar,RXTXcomm.jar,smslib-3.5.1.jar

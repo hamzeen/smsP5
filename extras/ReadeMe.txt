@@ -1,0 +1,6 @@
+If you are on PROCESSING 2.0, you will need to copy,
+
+	>javax.comm.properties to /processing-2.0/java/lib/
+
+1:38 PM 6/5/2013
+thanks, hamzeen. h.
