@@ -24,7 +24,7 @@ void draw() {
 }
 
 void keyPressed(){
-  sender.sendMessage("+94777602705","Hello Short Messaging Service.");
+  sender.sendMessage("+91777392404","Hello Short Messaging Service.");
   messageSent = true;
 }
 
